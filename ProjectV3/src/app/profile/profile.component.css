@@ -1,0 +1,76 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.buttons{
+  float: right;
+}
+app-logged-status{
+  font-size: 2em;
+  color: black;
+}
+#title{
+  width: 100%;
+  font-size: 2em;
+}
+.likedList{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.listItem{
+  width: 22%;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  color: #eee;
+  height: 100%;
+  max-height: 100%;
+  min-width: 22%;
+  max-width: 22%;
+  min-height: 100%;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.listItem img{
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+.button{
+  width: 200px;
+  height: 100%;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 3px;
+  margin: 25px;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 2em;
+  font-family: "Times New Roman";
+}
+.button:hover{
+  background-color: black;
+  color: #eeeeee;
+}
+.inputModel{
+  border-radius: 5px;
+  border-color: black;
+  width: 15%;
+  height: 40px;
+  font-size: 1em;
+  font-family: "Times New Roman";
+}
+.inputModel:active{
+  background-color: black;
+  color: #eeeeee;
+}
+.inputModel:hover{
+  font-size: 2em;
+}

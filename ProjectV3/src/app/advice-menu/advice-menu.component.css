@@ -1,0 +1,66 @@
+img {
+  width: 50%;
+  height: 70%;
+  max-width: 50%;
+  max-height: 70%;
+  min-width: 50%;
+  min-height: 70%;
+  float: left;
+  align: left;
+}
+.screen{
+  width: 50%;
+  height: 70%;
+  max-width: 50%;
+  max-height: 70%;
+  min-width: 50%;
+  min-height: 70%;
+  float: right;
+  align: right;
+}
+.pito{
+  margin: 2%;
+  width: 50%;
+  margin-left: auto;
+  height: auto;
+}
+a{
+  font-size: 1em;
+  text-decoration: none;
+  border: solid 1px black;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.first, .second{
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+.pito{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-family: "Times New Roman";
+  color: #eeeeee;
+  /*line-height: .9em;*/
+  font-family: Arial;
+}

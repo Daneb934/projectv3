@@ -1,0 +1,75 @@
+app-logged-status{
+  float: right;
+  font-size: 2em;
+  color: black;
+}
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title{
+  width: 50%;
+  height: 20%;
+  border-radius: 25px;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  font-size: 2em;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+.prodName{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+.prodDescription{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+.prodPrice{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+.button{
+  width: 200px;
+  height: 100%;
+  padding: 3px;
+  font-weight: bold;
+  border-radius: 3px;
+  margin: 25px;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 2em;
+  font-family: "Times New Roman";
+}
+.button:hover{
+  background-color: black;
+  color: #eeeeee;
+}
+.inputModel{
+  border-radius: 5px;
+  border-color: black;
+  width: 100%;
+  height: 40px;
+  font-size: 1em;
+  font-family: "Times New Roman";
+  margin-bottom: 20px;
+}
+.inputModel:active{
+  width: 100%;
+  background-color: black;
+  color: #eeeeee;
+}
+.inputModel:hover{
+  width: 100%;
+  font-size: 2em;
+}
+.inputModel:focus{
+  width: 100%;
+}

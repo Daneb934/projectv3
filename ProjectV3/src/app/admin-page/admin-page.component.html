@@ -1,0 +1,13 @@
+<app-logged-status></app-logged-status>
+<div class="main">
+  <h2>Search Product By Name</h2>
+  <input class="srcItem"  #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="Product Name" />
+  <ul class="search-result" >
+    <li *ngFor="let pro of products$ | async" >
+      <a routerLink="productEdit/{{pro.id}}">
+        {{pro.name}}
+      </a>
+    </li>
+  </ul>
+  <h1 *ngIf="!products$">No result</h1>
+</div>

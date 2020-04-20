@@ -1,0 +1,27 @@
+<app-logged-status></app-logged-status>
+
+<div class="main" *ngIf="product">
+
+  <div class="title">
+    <h2>Here you can edit this Product</h2>
+  </div>
+  <div class="prodName">
+      <input class="inputModel" [(ngModel)]="product.name" placeholder="name"/>
+  </div>
+
+  <div class="prodDescription">
+    <input class="inputModel" (click)="edit('description')" class="inputModel" [(ngModel)]="product.description" placeholder="description" />
+  </div>
+
+  <div class="prodPrice">
+    <input class="inputModel" (click)="edit('price')" class="inputModel" [(ngModel)]="product.price" placeholder="description" />
+  </div>
+
+  <div class="buttons">
+    <button class="button" (click)="goBack()">go back</button>
+    <button class="button" (click)="save()">save</button>
+  </div>
+
+</div>
+
+

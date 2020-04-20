@@ -1,0 +1,24 @@
+<a routerLink="/forall" ><h1 id="titlePull" > Pull && Bear</h1></a>
+<nav>
+  <ul id="nav_list" >
+    <li (mouseenter)="mouseLeave()" ><a routerLink="/forall" routerLinkActive="active"> For All </a>|</li>
+    <li (mouseenter)="mouseEnter(1)" ><a routerLink="/forman" routerLinkActive="active"> Man </a>|</li>
+    <li (mouseenter)="mouseEnter(2)"><a routerLink="/forwoman" routerLinkActive="active"> Woman </a></li>
+  </ul>
+  <ul id="nav_list_sign" (mouseenter)="mouseLeave()">
+    <li><a routerLink="/sign/in" routerLinkActive="active">Sign in</a></li>
+    <li><a routerLink="/sign/up" routerLinkActive="active">Sign up</a>|</li>
+  </ul>
+</nav>
+
+<div class="dropdown_menu" *ngIf="categories" (mouseleave)="mouseLeave()">
+  <ul id="categories_dropdown">
+    <li *ngFor="let category of categories">
+      <a href="/category/{{category.id}}/products">{{category.name}}</a>
+    </li>
+  </ul>
+</div>
+
+<router-outlet (mouseenter)="mouseLeave()"></router-outlet>
+
+<app-bottom-navigation></app-bottom-navigation>

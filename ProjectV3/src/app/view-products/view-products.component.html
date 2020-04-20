@@ -1,0 +1,20 @@
+<app-logged-status></app-logged-status>
+
+<div class="grid-pad" *ngIf="products">
+
+  <div class="col-1-4" *ngFor="let product of products">
+
+    <div class="module hero">
+      <a routerLink="/products/{{product.id}}">
+        <h3> {{product.name}} </h3>
+        <img id="prod_img" src="{{product.img}}">
+
+        <h4> Price : {{product.price}} </h4>
+        <h4> Orders: {{product.orderCount}} </h4>
+      </a>
+
+    </div>
+
+  </div>
+
+</div>

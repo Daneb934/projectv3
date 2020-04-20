@@ -1,0 +1,84 @@
+.grid-pad{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#prod_img{
+  max-width: 100%;
+
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* DashboardComponent's private CSS styles */
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  color: #eee;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+a {
+  text-decoration: none;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+h4 {
+  position: relative;
+}
+.grid {
+  margin: 0;
+}
+.col-1-4 {
+  width: 25%;
+}
+.module {
+  padding: 20px;
+  text-align: center;
+  color: #eee;
+  max-height: 100%;
+  min-width: 100%;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.module:hover {
+  cursor: pointer;
+}
+.grid-pad {
+  padding: 10px 0;
+}
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+@media (max-width: 1024px) {
+  .module {
+    font-size: 10px;
+    max-height: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .grid {
+    margin: 0;
+  }
+  .module {
+    min-width: 100%;
+  }
+}
+app-logged-status{
+  float: right;
+  font-size: 2em;
+  color: black;
+}

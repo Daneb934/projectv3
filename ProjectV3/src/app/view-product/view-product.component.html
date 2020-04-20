@@ -1,0 +1,64 @@
+<app-logged-status></app-logged-status>
+
+<div *ngIf="product">
+  <div id="main">
+
+    <div id="left">
+      <img src="{{product.img}}">
+      <img src="{{product.img3}}">
+    </div>
+
+    <div id="mid">
+      <img src="{{product.img2}}">
+
+      <img src="{{product.img4}}">
+
+    </div>
+
+    <div id="right">
+      <h1> {{product.name}} </h1>
+      <p>{{product.price}}</p>
+      <p>Description: {{product.description}}</p>
+      <p *ngIf="product.available">Available: Available</p>
+      <p *ngIf="!product.available">Available: Not Available</p>
+      <p>Orders: {{product.orderCount}}</p>
+      <div id="button_div">
+        <BUTTON class="button" (click)="addToFav()">Add</BUTTON>
+        <BUTTON class="button" (click)="buyProduct()">Buy</BUTTON>
+      </div>
+    </div>
+
+  </div>
+
+  <h1 >Comments: </h1>
+
+  <div class="comments" *ngIf="product.comments">
+
+    <div class="col-1-4" *ngFor="let comment of product.comments">
+
+      <div class="comment">
+        <h2>{{comment.userName}}:</h2>
+        <p>{{comment.body}}</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="addComment">
+    <div class="form" >
+      <h1>Leave a comment:</h1>
+
+      <input type="text" placeholder="Your name" id="userName">
+
+      <textarea id="bodyCom" placeholder="Your Comment"></textarea>
+
+      <input id="signUp" type="submit" value="Submit" class="submit" (click)="addComment()">
+
+    </div>
+  </div>
+
+</div>
+
+<div *ngIf="!product">
+  <h1>No Product</h1>
+</div>
